@@ -3,16 +3,89 @@
 }
 
 body {
-    padding: 0;
     margin: 0;
+}
+
+.nav, .hero, .cards, .cta, .footer {
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 .nav {
     background-color: #1F2937;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     flex: 1;
+}
+
+
+.hero {
+    background-color: #1F2937;
+    display: flex; 
+    justify-content: center;
+    flex: 1;
+    gap: 75px;
+}
+
+.hero-left, .image {
+    width: 450px;
+    margin-top: 75px;
+    margin-bottom: 100px;
+}
+
+.image {
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    color: white;
+}
+
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding-bottom: 75px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 150px;
+    height: 150px;
+    border: 3px solid #3882F6;
+    border-radius: 12px;
+}
+
+
+.quote-box{
+    background-color: #e5e7eb;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.quote {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: lighter;
+    color: #1F2937;
+}
+
+.attribution {
+    font-size: 22px;
+    text-align: right;
+    font-weight: bold;
 }
 
 h1 {
@@ -29,8 +102,18 @@ h2 {
     color: #f9faf8;
 }
 
+h3 {
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1f2937;
+    text-align: center;
+}
+
 .body {
     font-size: 18px
+    margin: 0;
+    padding: 0;
+    font-weight: lighter;
 }
 
 .light {
@@ -38,6 +121,12 @@ h2 {
     font-weight: lighter;
     margin-top: 10px;
     margin-bottom: 15px;
+}
+
+.dark {
+    text-align: center;
+    padding-top: 5px;
+    color: #1f2937;
 }
 
 a {
@@ -68,24 +157,3 @@ ul {
    padding: 0;
 }
 
-.hero {
-    background-color: #1F2937;
-    display: flex; 
-    justify-content: center;
-    gap: 90px;
-    flex: 1;
-}
-
-.hero-left, .image {
-    width: 450px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-.image {
-    background-color: grey;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
-}
